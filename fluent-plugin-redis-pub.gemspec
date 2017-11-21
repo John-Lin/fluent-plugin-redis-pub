@@ -8,8 +8,7 @@ Gem::Specification.new do |spec|
   spec.email   = ["linton.tw@gmail.com"]
 
   spec.summary       = "Redis output publish plugin for Fluent"
-  spec.description   = "ttps://github.com/John-Lin/fluent-plugin-redis-pub"
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/John-Lin/fluent-plugin-redis-pub"
   spec.license       = "Apache-2.0"
 
   test_files, files  = `git ls-files -z`.split("\x0").partition do |f|
