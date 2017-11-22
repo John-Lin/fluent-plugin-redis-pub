@@ -72,7 +72,12 @@ module Fluent
 
       def format(tag, time, record)
         record = inject_values_to_record(tag, time, record)
-        [tag, time, record].to_msgpack
+        log = {
+          :tag => tag,
+          :time => time,
+          :record => record
+        }
+        log.to_msgpack
       end
 
       def formatted_to_msgpack_binary
